@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-
   # GET /
   #
   # This action is the called when someone who is not logged in trys to access the
@@ -9,4 +8,9 @@ class HomeController < ApplicationController
   def index
 
   end
+
+  def contact
+
+  end
+
 end
