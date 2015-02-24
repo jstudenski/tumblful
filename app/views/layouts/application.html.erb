@@ -12,9 +12,12 @@
 <nav class="navbar navbar-inverse navbar-static-top">
   <a class="navbar-brand logo-font" href="/">Tumblful.</a>
 
-    <%= button_to("Sign out", destroy_user_session_path, :method => :delete, :class => "btn btn-primary btn-sm navbar-btn") if user_signed_in? %>
+<% if signed_in? %>
+    <%= button_to("Sign out", destroy_user_session_path, :method => :delete, :class => "btn btn-primary btn-sm navbar-btn")%>
+<% else %>
+    <%= button_to("Sign in", destroy_user_session_path, :method => :delete, :class => "btn btn-primary btn-sm navbar-btn")%>
+<% end %>
 
-    <%= button_to("Sign in", destroy_user_session_path, :method => :delete, :class => "btn btn-primary btn-sm navbar-btn") unless user_signed_in? %>
 </nav>
 
 <%= notices %>
