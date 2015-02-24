@@ -14,6 +14,7 @@
 
     <%= button_to("Sign out", destroy_user_session_path, :method => :delete, :class => "btn btn-primary btn-sm navbar-btn") if user_signed_in? %>
 
+    <%= button_to("Sign in", destroy_user_session_path, :method => :delete, :class => "btn btn-primary btn-sm navbar-btn") unless user_signed_in? %>
 </nav>
 
 <%= notices %>
