@@ -10,14 +10,10 @@
 <body>
 
 <nav class="navbar navbar-inverse navbar-static-top">
+  <a class="navbar-brand logo-font" href="/">Tumblful.</a>
 
-</nav>
+    <%= button_to("Sign out", destroy_user_session_path, :method => :delete, :class => "btn btn-primary btn-sm navbar-btn") if user_signed_in? %>
 
-<nav>
-  <a class="nav-logo-link page-title" href="/">
-    <h1 class='pull-left'>Tumblful.</h1>
-  </a>
-  <%= button_to("Sign out", destroy_user_session_path, :method => :delete, :class => "pull-right") if user_signed_in? %>
 </nav>
 
 <%= notices %>

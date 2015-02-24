@@ -1,3 +1,5 @@
+// are pull-left / pull-right being used?
+
 body {
   background-attachment: scroll;
   background-clip: border-box;
@@ -24,13 +26,8 @@ body {
   width: 100%;
 }
 
-.nav-logo-link {
-  height: 12px;
-  padding: 10px 14px 18px;
-  h1 {
+.logo-font {
     font-family: 'Coustard', serif;
-    padding-left: 15px;
-  }
 }
 
 .main-content {
