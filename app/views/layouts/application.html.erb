@@ -12,11 +12,24 @@
 <nav class="navbar navbar-inverse navbar-static-top">
   <a class="navbar-brand logo-font" href="/">Tumblful.</a>
 
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        </ul>
+
+
+
 <% if signed_in? %>
     <%= button_to("Sign out", destroy_user_session_path, :method => :delete, :class => "btn btn-primary btn-sm navbar-btn")%>
 <% else %>
     <%= button_to("Sign in", destroy_user_session_path, :method => :delete, :class => "btn btn-primary btn-sm navbar-btn")%>
 <% end %>
+
+
+</div>
+
+
 
 </nav>
 
