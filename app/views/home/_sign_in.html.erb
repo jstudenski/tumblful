@@ -2,7 +2,7 @@
                     :builder => InlineErrorsBuilder,
                     :method => :POST,
                     :role => :form do |f| %>
-  <br />                  
+  <br/>                  
   <div>
     <%= content_tag :div do %>
       <%= f.text_field :email, :placeholder => "Username or email" %>
@@ -18,3 +18,5 @@
     <%= link_to "Forgot password?", new_user_password_path %>
   </div>
 <% end %>
+
+

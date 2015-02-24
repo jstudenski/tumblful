@@ -8,15 +8,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<nav class="navbar navbar-inverse navbar-static-top">
+
+</nav>
+
 <nav>
   <a class="nav-logo-link page-title" href="/">
     <h1 class='pull-left'>Tumblful.</h1>
   </a>
   <%= button_to("Sign out", destroy_user_session_path, :method => :delete, :class => "pull-right") if user_signed_in? %>
 </nav>
+
 <%= notices %>
+
 <div class='main-content'>
   <%= yield %>
 </div>
 </body>
 </html>
+
+
+
