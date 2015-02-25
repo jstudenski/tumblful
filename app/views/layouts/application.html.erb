@@ -18,18 +18,13 @@
         <li><a href="#">Link</a></li>
         </ul>
 
-
-
 <% if signed_in? %>
     <%= button_to("Sign out", destroy_user_session_path, :method => :delete, :class => "btn btn-primary btn-sm navbar-btn")%>
 <% else %>
     <%= button_to("Sign in", destroy_user_session_path, :method => :delete, :class => "btn btn-primary btn-sm navbar-btn")%>
 <% end %>
 
-
 </div>
-
-
 
 </nav>
 
