@@ -5,7 +5,7 @@ Tumblful::Application.routes.draw do
 
   # 3.3.2
   resources :image_links
-
+  resources :text_posts
 
   authenticated :user do
     resources :follows, :except => [:new, :edit, :show, :update]
