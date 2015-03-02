@@ -3,6 +3,10 @@ Tumblful::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+  # 3.3.2
+  resources :image_links
+
+
   authenticated :user do
     resources :follows, :except => [:new, :edit, :show, :update]
     root :to => 'follows#index', :as => :user_root
